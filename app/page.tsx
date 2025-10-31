@@ -16,7 +16,7 @@ export default function HomePage() {
         
         {/* Teks paragraf dengan warna abu-abu tua agar mudah dibaca */}
         <p className="text-lg md:text-xl text-gray-700 mb-2">
-          I'm Nabil Abrian Aryo Prabowo, an Information Engineering student currently exploring various areas within IT, including data science, web development, and cyber security.
+          I&apos;m Nabil Abrian Aryo Prabowo, an Information Engineering student currently exploring various areas within IT, including data science, web development, and cyber security.
         </p>
         
         <p className="text-md md:text-lg text-gray-600">
