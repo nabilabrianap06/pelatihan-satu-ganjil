@@ -3,8 +3,8 @@ import { s3Storage } from "@payloadcms/storage-s3";
 import sharp from "sharp";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
 import { buildConfig } from "payload";
-import { Papers } from "./src/collections/Paper";
-import { Media } from "./src/collections/Media";
+//import { Papers } from "./src/collections/Paper";
+//import { Media } from "./src/collections/Media";
 
 export default buildConfig({
   // If you'd like to use Rich Text, pass your editor here
