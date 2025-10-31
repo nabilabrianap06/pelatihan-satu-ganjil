@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+
+    // ==========================================================
+    // BAGIAN PENTING DIMULAI DARI SINI
+    // ==========================================================
+    "baseUrl": ".", // Memberitahu TypeScript root proyek Anda
+    "paths": {
+      "@/*": ["./*"], // Alias default Next.js
+      "payload.config": ["./src/payload.config.ts"] // Alias untuk config Payload
+    }
+    // ==========================================================
+    // BAGIAN PENTING SELESAI DI SINI
+    // ==========================================================
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+    // Pastikan file .js juga ter-include jika Anda mencampur kode
+    // "**/*.js", 
+    // "**/*.jsx" 
+  ],
+  "exclude": ["node_modules"]
+}

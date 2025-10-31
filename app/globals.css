@@ -1,26 +1,20 @@
-@import "tailwindcss";
+/* File: app/globals.css */
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Mengimpor direktif dasar Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Menerapkan background gradasi biru elegan 
+  ke seluruh body website.
+*/
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* Gradasi dari biru tua ke biru yang lebih gelap */
+  background-image: linear-gradient(to bottom right, #2563EB, #1E3A8A); /* setara 'from-blue-600 to-blue-900' */
+  
+  /* Memastikan background menutupi seluruh halaman */
+  min-height: 100vh;
+  
+  /* Mengatur warna teks default menjadi putih agar terbaca */
+  color: white; 
 }
