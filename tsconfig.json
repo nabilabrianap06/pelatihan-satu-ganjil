@@ -1,44 +1,45 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "noEmit": true,
-    "incremental": true,
-    "module": "esnext",
     "esModuleInterop": true,
-    "moduleResolution": "node",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "incremental": true,
     "plugins": [
       {
         "name": "next"
       }
     ],
-
-    // ==========================================================
-    // BAGIAN PENTING DIMULAI DARI SINI
-    // ==========================================================
-    "baseUrl": ".", // Memberitahu TypeScript root proyek Anda
     "paths": {
-      "@/*": ["./*"], // Alias default Next.js
-      "payload.config": ["./src/payload.config.ts"] // Alias untuk config Payload
+       "@payload-config": ["./payload.config.ts"],
+      "@/*": [
+        "./*"
+      ]
     }
-    // ==========================================================
-    // BAGIAN PENTING SELESAI DI SINI
-    // ==========================================================
   },
   "include": [
     "next-env.d.ts",
-    ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-    // Pastikan file .js juga ter-include jika Anda mencampur kode
-    // "**/*.js", 
-    // "**/*.jsx" 
-  ],
-  "exclude": ["node_modules"]
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts",
+    ".next\\dev/types/**/*.ts",
+    ".next\\dev/types/**/*.ts"
+, "app/(frontend)/app/(frontend)/layout.tsx/layout.tsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
