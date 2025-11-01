@@ -1,25 +1,15 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { FlatCompat } from "@eslint/eslintrc";
+import { withPayload } from "@payloadcms/next/withPayload";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-const eslintConfig = [
-  ...compat.extends("next/core-web-vitals"),
-  {
-    ignores: [
-      "node_modules/**",
-      ".next/**",
-      "out/**",
-      "build/**",
-      "next-env.d.ts",
-    ],
+/** @type {import('next').NextConfig} */
+const nextConfig: import('next').NextConfig = {
+  // Your Next.js config here
+  reactCompiler: false,
+  turbopack:{},
+  experimental: {
+    //turbo: false,
   },
-];
+};
 
-export default eslintConfig;
+// Make sure you wrap your `nextConfig`
+// with the `withPayload` plugin
+export default withPayload(nextConfig);

@@ -15,7 +15,7 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "incremental": true,
     "plugins": [
       {
@@ -23,7 +23,9 @@
       }
     ],
     "paths": {
-       "@payload-config": ["./payload.config.ts"],
+      "@payload-config": [
+        "./payload.config.ts"
+      ],
       "@/*": [
         "./*"
       ]
@@ -37,8 +39,9 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts",
     ".next\\dev/types/**/*.ts",
-    ".next\\dev/types/**/*.ts"
-, "app/(frontend)/app/(frontend)/layout.tsx/layout.tsx"  ],
+    ".next\\dev/types/**/*.ts",
+    "app/(frontend)/app/(frontend)/layout.tsx/layout.tsx"
+  ],
   "exclude": [
     "node_modules"
   ]
