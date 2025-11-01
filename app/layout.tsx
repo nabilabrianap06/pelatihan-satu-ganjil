@@ -2,8 +2,8 @@
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/src/components/Navbar"; 
+import "./globals.css"; 
+import Navbar from "@/src/components/Navbar"; // Pastikan path ini benar
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* ... (sisa kode body Anda sudah benar) ... */}
+      {/* Latar belakang default abu-abu muda yang bersih */}
       <body className={`${inter.className} bg-gray-100 min-h-screen flex flex-col`}>
-        <Navbar />
-        <main className="flex-grow flex flex-col">{children}</main>
+        <Navbar /> 
+        <main className="flex-grow flex flex-col">{children}</main> 
       </body>
     </html>
   );

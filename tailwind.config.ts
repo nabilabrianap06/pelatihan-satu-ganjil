@@ -1,13 +1,15 @@
 // File: tailwind.config.ts
-// Pastikan isinya seperti ini:
 
 import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    // Pastikan path ini sesuai dengan struktur proyek Anda
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/**/*.{js,ts,jsx,tsx,mdx}", // Ini penting untuk folder src/components
+    // Path ini memindai folder 'app/' (untuk halaman)
+    "./app/**/*.{js,ts,jsx,tsx,mdx}", 
+
+    // TAMBAHKAN/PASTIKAN PATH INI ADA:
+    // Path ini memindai folder 'src/' (untuk komponen seperti Navbar)
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", 
   ],
   theme: {
     extend: {
