@@ -21,3 +21,13 @@ const config: Config = {
   plugins: [],
 };
 export default config;
+
+// File: tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "moduleResolution": "bundler",
+    "allowJs": true,
+  },
+}
