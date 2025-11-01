@@ -24,12 +24,13 @@ const config: Config = {
 };
 export default config;
 
-// File: tsconfig.json
+/* File: tsconfig.json
 {
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "bundler",
-    "allowJs": true,
-  },
+    "allowJs": true
+  }
 }
+*/
