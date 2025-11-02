@@ -3,7 +3,7 @@ import { s3Storage } from "@payloadcms/storage-s3";
 import sharp from "sharp";
 import { lexicalEditor } from "@payloadcms/richtext-lexical";
 import { buildConfig } from "payload";
-import { Edu } from "./components/edu"
+import { Edu } from "./src/components/edu"
 
 // import { Papers } from "./src/collections/Paper";
 // import { Media } from "./src/collections/Media";
